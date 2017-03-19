@@ -52,7 +52,7 @@ function Decoder(bytes, port) {
   var decoded = {};
 
   if (port === 1){
-    if(bytes[0] = 0) {
+    if(bytes[0] === 0) {
       decoded.time = true;
     }
   }
