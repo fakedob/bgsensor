@@ -1,10 +1,6 @@
 var ttn = require('ttn');
 var ttnConfig = require('./ttn.json');
 
-var region,
-    appId,
-    accessKey;
-
 var initTTN = function(config) {
     var client = new ttn.Client(config.TTN_REGION, config.TTN_APPID, config.TTN_ACCESSKEY);
 
