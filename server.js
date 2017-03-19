@@ -31,19 +31,19 @@ var initTTN = function(config) {
         };
 
         // If you don't have an encoder payload function:
-        var payload = [];
-        var now = new Date();
-        var year = now.getUTCFullYear() + '';
-        var firstYByte = ~~(year.substr(0, year.length -2));
-        var lastYByte = ~~(year.substr(year.length -2));
-
-        payload[0] = firstYByte;
-        payload[1] = lastYByte;
-        payload[2] = now.getUTCMonth();
-        payload[3] = now.getUTCDate();
-        payload[4] = now.getUTCHours();
-        payload[5] = now.getUTCMinutes();
-        payload[6] = now.getUTCSeconds();
+        // var payload = [];
+        // var now = new Date();
+        // var year = now.getUTCFullYear() + '';
+        // var firstYByte = ~~(year.substr(0, year.length -2));
+        // var lastYByte = ~~(year.substr(year.length -2));
+        //
+        // payload[0] = firstYByte;
+        // payload[1] = lastYByte;
+        // payload[2] = now.getUTCMonth();
+        // payload[3] = now.getUTCDate();
+        // payload[4] = now.getUTCHours();
+        // payload[5] = now.getUTCMinutes();
+        // payload[6] = now.getUTCSeconds();
 
         console.info('[DEBUG]', 'Sending:', JSON.stringify(payload));
         client.send(deviceId, payload);
