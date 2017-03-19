@@ -18,6 +18,7 @@ npm start
 ```
 
  - Time format: [20,17,2,19,16,56,29]
+ - Note: January is 0, February is 1, and so on.
 
  - Your encoder function
 
