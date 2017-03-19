@@ -18,7 +18,7 @@ var initTTN = function(config) {
 
     /*
      *
-     * null = all devices *, 'led' = field to listen for
+     * null = all devices *, 'time' = field to listen for
      */
     client.on('message', null, 'time', function(deviceId, flag) {
 
