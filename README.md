@@ -1,26 +1,27 @@
 # bgsensor
 
--- Run the script
-create a file named ttn.json and insert the values:
+- create a file named ttn.json and insert the values:
 
+```sh
 {
     "TTN_REGION": "eu",
     "TTN_APPID": "app-id",
     "TTN_ACCESSKEY": "app-key"
 };
+```
 
+ - then:
 
-then:
-
+```sh
 npm install
 npm start
+```
 
+ - Time format: [20,17,2,19,16,56,29]
 
-time format:
-[20,17,2,19,16,56,29]
+ - Your encoder function
 
-your encoder function
-
+```sh
 function Encoder(object, port) {
   var bytes = [];
   if (port === 1) {
@@ -42,9 +43,11 @@ function Encoder(object, port) {
 
   return bytes;
 }
+```
 
-your decoder function
+ - Your decoder function
 
+```sh
 function Decoder(bytes, port) {
   var decoded = {};
 
@@ -56,3 +59,4 @@ function Decoder(bytes, port) {
 
   return decoded;
 }
+```
