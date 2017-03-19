@@ -1,4 +1,5 @@
 var ttn = require('ttn');
+var ttnConfig = require('./ttn.json');
 
 var region,
     appId,
@@ -49,3 +50,5 @@ var initTTN = function(config) {
         client.send(deviceId, payload);
     });
 };
+
+initTTN(ttnConfig);

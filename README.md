@@ -7,7 +7,7 @@
     "TTN_REGION": "eu",
     "TTN_APPID": "app-id",
     "TTN_ACCESSKEY": "app-key"
-};
+}
 ```
 
  - then:
